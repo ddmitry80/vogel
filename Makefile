@@ -6,7 +6,7 @@ create-consumer:
     --bootstrap-server kafka:9092 \
     --from-beginning \
     --property print.key=true \
-		--property print.value=false \
+	--property print.value=false \
     --topic dbserver1.inventory.customers
 
 get-jupyter-token:
