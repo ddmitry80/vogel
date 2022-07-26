@@ -9,9 +9,6 @@ create-consumer:
 	--property print.value=false \
     --topic dbserver1.inventory.customers
 
-get-jupyter-token:
-	docker-compose -f docker-compose.yml exec jupyter-local jupyter notebook list
-
 run-streamer:
 	docker-compose  \
 	-f docker-compose.yml exec jupyter-local /usr/local/spark/bin/spark-submit \
