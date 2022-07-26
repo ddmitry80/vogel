@@ -40,7 +40,6 @@ services:
       - postgres
   jupyter-local:
     build: ./jupyter-local
-    entrypoint: start-notebook.sh --NotebookApp.token=''
     ports:
      - 8888:8888
      - 4040:4040
@@ -50,3 +49,4 @@ services:
       - postgres
     volumes:
       - ./jupyter-local/notebooks:/home/jovyan/work
+    entrypoint: start-notebook.sh --NotebookApp.token=''
