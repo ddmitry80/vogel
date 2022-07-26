@@ -41,9 +41,9 @@ services:
   jupyter-local:
     build: ./jupyter-local
     ports:
-     - 8888:8888
-     - 4040:4040
-     - 4041:4041
+     - 5888:8888
+     - 5040:4040
+     - 5041:4041
     links:
       - kafka
       - postgres
